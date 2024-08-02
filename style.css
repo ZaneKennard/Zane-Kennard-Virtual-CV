@@ -3,26 +3,26 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 a {
-    color: #0073e6;
+    color: #ff6f61;
     text-decoration: none;
     transition: color 0.3s ease-in-out; /* Smooth color transition */
 }
 
 a:hover {
-    color: #005bb5;
+    color: #e65c4f;
     text-decoration: underline;
 }
 
 /* Header Styles */
 header {
-    background-color: #0073e6;
+    background-color: #333c83;
     color: white;
     padding: 20px;
     text-align: center;
@@ -73,8 +73,8 @@ main {
 }
 
 #mainLeft h2 {
-    color: #0073e6;
-    border-bottom: 2px solid #0073e6;
+    color: #333c83;
+    border-bottom: 2px solid #333c83;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.5em;
@@ -87,6 +87,7 @@ main {
 
 #mainLeft i {
     margin-right: 8px;
+    color: #ff6f61; /* Icon color */
 }
 
 /* Right Column Styles */
@@ -108,8 +109,8 @@ main {
 }
 
 #mainRight h2 {
-    color: #0073e6;
-    border-bottom: 2px solid #0073e6;
+    color: #333c83;
+    border-bottom: 2px solid #333c83;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.5em;
