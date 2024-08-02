@@ -3,16 +3,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
     color: #333;
     line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 a {
     color: #ff6f61;
     text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -24,24 +24,26 @@ a:hover {
 header {
     background-color: #333c83;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: fadeInDown 1s ease-in-out; /* Fade-in animation */
+    animation: fadeInDown 1s ease-in-out;
+    background: linear-gradient(135deg, #6e33a4, #333c83); /* Gradient background */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 header hr {
     border: 0;
     border-top: 2px solid white;
-    width: 50%;
-    margin: 10px auto;
+    width: 60%;
+    margin: 20px auto;
 }
 
 /* Main Layout */
@@ -51,84 +53,84 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for content */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Left Column Styles */
 #mainLeft {
     width: 30%;
     background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
 #mainLeft:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
+    transform: scale(1.05);
 }
 
 #mainLeft section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #mainLeft h2 {
     color: #333c83;
-    border-bottom: 2px solid #333c83;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    border-bottom: 3px solid #333c83;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 #mainLeft p, #mainLeft ul {
-    margin: 5px 0;
-    font-size: 1.1em;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 #mainLeft i {
-    margin-right: 8px;
-    color: #ff6f61; /* Icon color */
+    margin-right: 10px;
+    color: #ff6f61;
 }
 
 /* Right Column Styles */
 #mainRight {
     width: 65%;
     background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
 #mainRight:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
+    transform: scale(1.05);
 }
 
 #mainRight section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #mainRight h2 {
     color: #333c83;
-    border-bottom: 2px solid #333c83;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    border-bottom: 3px solid #333c83;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 #mainRight p {
-    margin: 5px 0;
-    font-size: 1.1em;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 #mainRight ul {
-    margin: 10px 0;
-    padding-left: 20px;
-    font-size: 1.1em;
+    margin: 20px 0;
+    padding-left: 30px;
+    font-size: 1.2em;
 }
 
 #mainRight ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Animations */
@@ -150,6 +152,18 @@ main {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333c83;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
