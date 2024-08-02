@@ -6,14 +6,17 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 a {
     color: #0073e6;
     text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
 }
 
 a:hover {
+    color: #005bb5;
     text-decoration: underline;
 }
 
@@ -24,12 +27,14 @@ header {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-in-out; /* Fade-in animation */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 header hr {
@@ -46,6 +51,7 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for content */
 }
 
 /* Left Column Styles */
@@ -55,6 +61,11 @@ main {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mainLeft:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
 }
 
 #mainLeft section {
@@ -74,6 +85,10 @@ main {
     font-size: 1.1em;
 }
 
+#mainLeft i {
+    margin-right: 8px;
+}
+
 /* Right Column Styles */
 #mainRight {
     width: 65%;
@@ -81,6 +96,11 @@ main {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mainRight:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
 }
 
 #mainRight section {
@@ -104,6 +124,31 @@ main {
     margin: 10px 0;
     padding-left: 20px;
     font-size: 1.1em;
+}
+
+#mainRight ul li {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
