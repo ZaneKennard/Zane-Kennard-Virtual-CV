@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #0066cc;
+    color: #0073e6;
     text-decoration: none;
 }
 
@@ -28,7 +28,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 header hr {
@@ -38,7 +39,7 @@ header hr {
     margin: 10px auto;
 }
 
-/* Main Content Styles */
+/* Main Layout */
 main {
     display: flex;
     justify-content: space-between;
@@ -47,55 +48,62 @@ main {
     margin: 0 auto;
 }
 
-/* Left Column */
+/* Left Column Styles */
 #mainLeft {
     width: 30%;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 #mainLeft section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #mainLeft h2 {
     color: #0073e6;
     border-bottom: 2px solid #0073e6;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
 #mainLeft p, #mainLeft ul {
     margin: 5px 0;
+    font-size: 1.1em;
 }
 
-/* Right Column */
+/* Right Column Styles */
 #mainRight {
     width: 65%;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 #mainRight section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #mainRight h2 {
     color: #0073e6;
     border-bottom: 2px solid #0073e6;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
 #mainRight p {
     margin: 5px 0;
+    font-size: 1.1em;
 }
 
 #mainRight ul {
     margin: 10px 0;
     padding-left: 20px;
+    font-size: 1.1em;
 }
 
 /* Responsive Design */
